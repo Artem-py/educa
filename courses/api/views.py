@@ -13,8 +13,6 @@ from courses.api.permissions import IsEnrolled
 from courses.api.serializers import CourseWithContentsSerializer
 
 
-
-
 class SubjectListView(generics.ListAPIView):
     queryset = Subject.objects.all()
     serializer_class = SubjectSerializer
